@@ -1,0 +1,53 @@
+.toeSlideShellSub {
+	background: none repeat scroll 0 0 #5B636B;
+	border: 1px solid #737C85;
+	border-radius: 10px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.3) inset;
+	display: inline-block;
+	float: left;
+	height: 30px;
+	margin: 3px 0 0;
+	overflow: hidden;
+	position: relative;
+	text-decoration: none;
+	width: 60px;
+}
+.toeSlideShellSub .toeSlideButtSub {
+	background-color: #E1E5E9;
+	background-image: -moz-linear-gradient(center top , rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.2) 0%);
+	border-radius: 10px;
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+	height: 30px;
+	left: 30px;
+	position: absolute;
+	width: 30px;
+	z-index: 1;
+}
+.toeSlideShellSub .toeSlideOnSub {
+	background-color: #6495ED;
+	border-bottom-left-radius: 8px;
+	border-top-left-radius: 8px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.3) inset;
+	left: 0;
+	padding: 0 0 0 5px;
+	text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.3);
+	width: 35px;
+}
+
+.toeSlideShellSub .toeSlideOffSub {
+	color: #8B949F;
+	right: 5px;
+	text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.3);
+}
+.toeSlideShellSub .toeSlideOnSub, .toeSlideShellSub .toeSlideOffSub {
+	color: #FFFFFF;
+	display: inline-block;
+	font-size: 12px;
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	top: 0;
+}
+

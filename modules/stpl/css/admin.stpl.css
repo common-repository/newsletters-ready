@@ -1,0 +1,352 @@
+/**
+* Stpl
+*/
+.subStplCanvasRow {
+	padding: 5px 0;
+}
+.subStplCanvasRowContent {
+	height: 100px;
+	/*border: 1px black dashed;*/
+	position: relative;
+	padding-bottom: 6px;
+	margin: 1px;
+}
+.subStplCanvasRowContent:hover, .subStplCanvasRowContent.subStplHover {
+	background: rgba(216, 216, 216, .1);
+}
+/*display settings box*/
+.subStplCanvasRowContent:hover .subStplCanvasRowSettings, .subStplCanvasRowContent.subStplHover .subStplCanvasRowSettings {
+	display: block;
+}
+.subStplCanvasRowSettings {
+	position: absolute;
+	z-index: 99;
+	top: -24px;
+	padding: 2px;
+	left: 0;
+	background-color: inherit;
+	border-top-right-radius: 5px;
+	display: none; /*hidden by default, display it on hover event, in css*/
+}
+.subStplCanvasCellSettings {
+	position: absolute;
+	z-index: 101;
+	top: -21px;
+	right: 0;
+	padding: 2px;
+	background-color: inherit;
+	border-top-left-radius: 5px;
+	display: none; /*hidden by default, display it on hover event, in css*/
+}
+.subStplCanvasRowIconMove {
+	background-image: url(img/arrow_updown.png);
+	cursor: move !important;
+}
+.subStplCanvasCellIconMove {
+	background-image: url(img/arrow_leftright.png);
+	cursor: move !important;
+}
+/*.subStplCanvasRowIconBgColor {
+	background-image: url(img/background_color_icon.png);
+}*/
+.subStplCanvasRowIconColumns {
+	background-image: url(img/columns_icon.png);
+}
+.subStplCanvasCellIconEdit {
+	background-image: url(img/column_setting_icon.png);
+}
+.subStplCanvasRowIconRemove, .subStplCanvasCellIconRemove {
+	background-image: url(img/remove_icon.png);
+}
+.subStplCanvasRowSetting {
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.subStplCanvasCellSetting {
+	float: right;
+	width: 20px;
+	height: 20px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.subStplCanvasRowColumnsNumShell {
+	position: absolute;
+	left: 70px;
+	z-index: 100;
+	top: -24px;
+	background-color: #808080;
+	border-radius: 2px;
+	padding: 2px;
+}
+.subStplCanvasRowColumnsNumShell input {
+	margin: 0 !important;
+}
+.subStplCanvasRowColumnsNumItem {
+	float: left;
+	margin-right: 5px;
+}
+.subStplCanvasRowColumnsNumText {
+	width: 30px !important;
+}
+.subStplCanvasCol {
+	height: 100%;
+	/*border: 1px grey dashed;*/
+	
+	margin: 3px;
+	float: left;
+	width: 98%;
+	position: relative;
+}
+.subStplCanvasCol:hover, .subStplCanvasCol.subStplHover {
+	/*background-color: #EEEEEE;*/
+	background: rgba(238, 238, 238, .4);
+}
+/*display settings box*/
+.subStplCanvasCol:hover .subStplCanvasCellSettings, .subStplCanvasCol.subStplHover .subStplCanvasCellSettings {
+	display: block;
+}
+#subStplCanvasSettings {
+	position: absolute;
+	width: 380px;
+	background: none;
+	border: none;
+}
+#subStplCanvasSettings .ui-tabs-nav{
+	width: 100%;
+	border: none;
+	color: black;
+	box-shadow: none;
+}
+#subStplCanvasSettings .ui-tabs-nav li {
+	float: left;
+	clear: none;
+	width: 50px !important;
+    background:#dddddd;
+	font-weight: normal;
+	padding: 10px 3px 12px 3px;
+    border:1px solid #cfcfcf;
+    border-right:1px solid #cfcfcf !important;
+	border-bottom: none !important;
+    box-shadow:none;
+    text-align:center;
+    
+    -webkit-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    margin:0 18px -3px 0;
+    
+    position:relative;
+    z-index:1;
+}
+
+#subStplCanvasSettings .ui-tabs-nav li a {
+    color:#9f9f9f;
+    padding:0 !important;
+    outline:none;
+    width:50px;
+    font-weight:normal !important;
+}
+
+#subStplCanvasSettings .ui-tabs-nav li.ui-tabs-active a {
+    color:#646464;
+}
+
+#subStplCanvasSettings .ui-tabs-nav li.ui-tabs-active {
+    border-bottom:1px solid #ededed;
+    background:#ededed;
+    z-index:21;
+    padding-bottom:10px !important;
+    margin-bottom:-1px !important;
+}
+
+#subStplCanvasSettings .ui-tabs-nav li.ui-tabs-active .left-corner {
+    background:url(img/left-active.png) no-repeat; 
+    position:absolute;
+    left:-19px;
+    width:22px;
+    height: 37px;
+    top:-1px;
+}
+
+#subStplCanvasSettings .ui-tabs-nav li .left-corner {
+    background:url(img/left-corner.png) no-repeat; 
+    position:absolute;
+    left:-19px;
+    width:22px;
+    height: 37px;
+    top:-1px;
+}
+
+#subStplCanvasSettings .ui-tabs-nav li:first-child .left-corner {
+    display:none;
+}
+
+#subStplCanvasSettings .ui-tabs-nav li.ui-tabs-active .right-corner {
+    background:url(img/right-active.png) no-repeat; 
+    position:absolute;
+    right:-19px ;
+    width:22px;
+    height: 37px;
+    top:-1px;
+}
+
+#subStplCanvasSettings .ui-tabs-nav li .right-corner {
+    background:url(img/right-corner.png) no-repeat; 
+    position:absolute;
+    right:-19px;
+    width:22px;
+    height: 37px;
+    top:-1px;
+}
+
+#subStplCanvasSettings .ui-tabs-panel {
+    min-width:215px !important;
+    border-right:1px solid #cfcfcf;
+    background:#ededed;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    position:relative;
+    z-index:20;
+	margin: 0 !important;
+	float: left;
+}
+
+.subStplCanvasSettingElement {
+	float: left;
+	border-radius: 5px;
+    float: left;
+    margin-bottom: 10px;
+    padding: 5px;
+	border: 1px solid #CCCCCC;
+	background-color: #F9F9F9;
+}
+.subStplCanvasSettingsContent {
+	overflow: visible !important;
+}
+.subStplCanvasSettingsContent .subStplCanvasSettingElement {
+	float: none !important;
+}
+.subStplCanvasElement {
+	float: left;
+	z-index: 2000;
+	border: 1px solid transparent;
+}
+.subStplCanvasElement:hover {
+	border: 1px dashed #CCCCCC;
+}
+.subStplCanvasContentEditing {
+	background-color: #F9F9F9 !important;
+	border: 1px solid #CCCCCC;
+}
+/*.subStplCanvasElementEditing * {
+	z-index: 2000;
+}*/
+
+.subStplCanvasElementPlaceholder {
+	border: 1px black solid;
+	border-radius: 5px;
+}
+
+.subStplCanvasColContent {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.subStplCanvasRowEnd {
+	clear: both;
+}
+.subStplCanvasRowSortHelper, .subStplCanvasColSortHelper {
+	border: 1px dashed #000000;
+	background: #A8A8A8;
+}
+.subStplCanvasColSortHelper {
+	display: block !important;
+	float: left;
+	margin: 2px;
+}
+.subStplCanvasSettingFieldSet {
+	padding: 10px;
+	border: 1px solid #D8D8D8;
+}
+.subStplCanvasSettingFieldSet:hover {
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.subStplCanvasBgImgStretch {
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.subStplCanvasBgImgCenter {
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.subStplCanvasBgImgTile {
+	background-repeat: repeat;
+}
+.subStplCanvasContentElementOriginal {
+	float: left;
+	width: 125px;
+	text-align: center;
+	background-position: center top;
+	background-repeat: no-repeat;
+	padding-right: 5px;
+	padding-bottom: 20px;
+	cursor: move;
+}
+.subStplCanvasContentElementOriginal img {
+	border: 1px solid #D8D8D8;
+	border-radius: 4px;
+}
+.subStplCanvasDividerOriginal {
+	cursor: pointer;
+}
+.subStplCanvasDividerImg {
+	width: 100%;
+}
+/* Make not visible big text "Select color"*/
+.subStplCanvasRowSettings .wp-color-result, 
+.subStplCanvasSettingStylesShell .wp-color-result {
+	padding-left: 10px;
+	height: 20px;
+}
+.subStplCanvasRowSettings .wp-color-result:after, 
+.subStplCanvasSettingStylesShell .wp-color-result:after {
+	content: '';
+}
+.subStplCanvasRowSettings .wp-picker-container,
+.subStplCanvasSettingStylesShell .wp-picker-container {
+	float: left;
+}
+/*********/
+.subStplCanvasSocialDesignButtShell label {
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom: 1px solid #FBD850 !important;
+	
+}
+.subStplCanvasSocialDesignButtShell label.ui-state-active {
+	border-bottom: 0px !important;
+}
+.subStplCanvasSocialDesignPresentation {
+	background-color: #FFFFFF;
+    border: 1px solid #FBD850;
+    float: left;
+    padding: 0px 0px 0px 5px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+	margin-top: -2px;
+}
+.stplCanvasCellAjaxHideData {
+	display: none;
+}
+.subStplCanvasPreviewShell {
+	text-align: center;
+}

@@ -1,0 +1,100 @@
+/*
+Theme Name: Standard
+Theme URI: http://readyshoppingcart.com/
+Author: Ecommerce plugin Creators
+Author URI: http://readyshoppingcart.com/
+Description: This is a default theme to our plugin
+Version: 1.0
+*/
+
+.subErrorMsg {
+    color: red;
+    font-weight: bold;
+}
+.subSuccessMsg {
+    color: green;
+    font-weight: bold;
+}
+.subInputError {
+    border: 2px red solid !important;
+}
+.toeUpdateQtyButtonsWrapper {float:left; margin:4px 0 0 -22px;}
+    
+.toeIncDecButton {
+    width: 8px;
+    height: 7px;
+    background: url("../img/toeIncDec.png") top right no-repeat;
+    /*overflow: hidden;*/
+    /*display:block;*/
+    text-decoration:none;
+    cursor: pointer;
+    /*margin: 0 0 0 5px;*/
+    /*text-align: center;*/
+    text-indent: -9999px;
+}
+.toeIncButton {
+    margin-bottom:5px;
+    background-position: top left;
+}
+
+#wp-admin-bar-comingsoon a {
+    background-color: #FF4444;
+    color: #FFFFFF;
+}
+#wp-admin-bar-comingsoon a:hover, #wp-admin-bar-comingsoon a:focus {
+	background-color: #FF3333 !important;
+	background-image: none !important;
+}
+.toePagingElement {
+    padding: 10px;
+}
+.subStatusIndicator {
+    width: 32px;
+    height: 32px;
+	display: block;
+}
+.subStatusIndicator.active {
+    background: url("../img/active.png") center center no-repeat !important;
+}
+.subStatusIndicator.disabled {
+    background: url("../img/disabled.png") center center no-repeat !important;
+}
+.subTblRow:hover {
+    background-color: yellowgreen;
+}
+.subTblHeader {
+    font-weight: bold;
+}
+.subTblHeader td {
+    border-bottom: 1px solid black;
+}
+/*****/
+.subOptTip {
+    float: right;
+    margin-top:5px;
+    margin-right: 3px;
+    width: 16px;
+    height: 16px;
+    background: url("../img/tip.png") no-repeat !important;
+}
+#subOptDescription {
+    position: fixed;
+    z-index: 10010;
+    display: none;
+    padding:8px;
+    border:3px solid #b9e3f0;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    -o-border-radius:8px;
+    -khtml-border-radius:8px;
+    border-radius:8px;
+    background:#E3F4F9;
+    font-size:12px;
+}
+.subHidden {
+    display: none;
+}
+
+.subSocIconsLinks a {
+	text-decoration: none;
+}
